@@ -33,12 +33,12 @@ class TeddiesManager{
                                                                     <article class="produit">
                                                                        <div class="imgContainer">
                                                                        <img src="${teddies.imageUrl}" alt="product" class="imgProduit">
-                                                                      
-                                                                     </div>
-                                                                    <a href="../../frontend/html/description.html" > <button class="boutonPanier" data-id="${teddies._id}">
-                                                                       <i class="fas fa-shopping-cart"></i>
-                                                                       ajoutez cet article à votre panier
+                                                                       <a href="../../frontend/html/description.html" > <button class="boutonDetails" data-id="${teddies._id}">
+                                                                       <i class="fas fa-question-circle"></i>                                                                    
+                                                                       <h3>${teddies.name}</h3>
                                                                    </button></a>
+                                                                     </div>
+                                                               
                                                                     
                                                                    </article>
                                                                    <!-- fin produit à l'unité-->

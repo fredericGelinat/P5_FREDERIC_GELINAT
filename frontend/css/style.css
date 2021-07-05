@@ -128,28 +128,40 @@ body {
     overflow: hidden;
     border-radius: 25%;
   }
-  .boutonSacAchat {
+  .boutonDetails {
     position: absolute;
-    top: 70%;
+    
+    top: 50%;
     right: 0;
-    background: var(--primaryColor);
-    border: none;
+    
+    
     text-transform: uppercase;
     padding: 0.5rem 0.75rem;
     letter-spacing: var(--mainSpacing);
     font-weight: bold;
     transition: var(--mainTransition);
-    transform: translateX(101%);
+    transform: translateX(201%);
+    
+    
+    
+    
+    font-size: 1rem;
+    color: var(--mainBlack);
+    border: 1px solid green;
+    
     cursor: pointer;
   }
-  .boutonSacAchat:hover {
-    color: var(--mainWhite);
+  .boutonDetails:hover {
+    color: green;
   }
-  .fa-shopping-cart {
+  .fas,  .fa-question-circle {
     margin-right: 0.5rem;
   }
-  .imgContainer:hover .boutonSacAchat {
+  .imgContainer:hover .boutonDetails {
     transform: translateX(0);
+    
+    
+    background: transparent;
   }
   .imgProduit {
     display: block;
