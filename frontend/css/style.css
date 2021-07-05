@@ -120,6 +120,8 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     grid-column-gap: 1.5rem;
     grid-row-gap: 2rem;
+    border: turquoise;
+
   }
   .imgContainer {
     position: relative;
@@ -154,6 +156,9 @@ body {
     width: 100%;
     min-height: 12rem;
     transition: var(--mainTransition);
+    border: rgb(224, 64, 163) 5px solid;
+    border-radius: 25%;
+
   }
   .imgContainer:hover .imgProduit {
     opacity: 0.5;
