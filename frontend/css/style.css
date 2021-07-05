@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+
+:root {
+  --primaryColor: #f09d51;
+  --mainWhite: #fff;
+  --mainBlack: #222;
+  --mainGrey: #ececec;
+  --mainSpacing: 0.1rem;
+  --mainTransition: all 0.3s linear;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  color: var(--mainBlack);
+  background: var(--mainWhite);
+  font-family: "Lato", sans-serif;
+}
+/* --------------- Navbar ---------------- */
+.barreDeNavigation {
+    position: sticky;
+    top: 0;
+    height: 150px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /*background: url("../../backend/images/teddy_2.jpg") center/cover no-repeat;*/
+    background: radial-gradient(circle at center, #c98987 10%, #bc95e7 100%);
+    z-index: 1;
+  }
+.barreDeNavigation img{
+    border-radius: 23%;
+}
+.justifyBarreDeNavigation {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2.5rem;
+  }
+
+.iconDeNavigation {
+    font-size: 1.5rem;
+  }
+.boutonPanier {
+    position: relative;
+    cursor: pointer;
+  }
+.NombreItemsDuBoutonPanier {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: var(--primaryColor);
+    padding: 0 5px;
+    border-radius: 30%;
+    color: var(--mainWhite);
+  }
+
+/*-------------------header-------------*/ 
+.header {
+    min-height: calc(100vh - 60px);
+    background: url("../../backend/images/teddy_1.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+.banniere {
+    text-align: center;
+    /*background: radial-gradient(circle at center, #c98987 10%, #bc95e7 100%);*/
+    background: transparent;
+    display: inline-block;
+    padding: 2rem;
+    color:#dfb3f5
+   
+  }
+.titreDeLaBanniere {
+    font-size: 3.4rem;
+    text-transform: uppercase;
+    letter-spacing: var(--mainSpacing);
+    margin-bottom: 3rem;
+  }
+.boutonAchatDeLaBanniere {
+    padding: 1rem 3rem;
+    text-transform: uppercase;
+    letter-spacing: var(--mainSpacing);
+    font-size: 1rem;
+    background: var(--primaryColor);
+    color: var(--mainBlack);
+    border: 1px solid var(--primaryColor);
+    transition: var(--mainTransition);
+    cursor: pointer;
+  }
+.boutonAchatDeLaBanniere:hover {
+  background: transparent;
+  color: var(--mainGrey);
+}
+/*-----------------fin du header--------------*/
