@@ -42,7 +42,9 @@ body {
     justify-content: space-between;
     padding: 0 2.5rem;
   }
-
+.iconeAccueil{
+  font-size: 2.5rem;
+}
 .iconeDeNavigation {
     font-size: 2.5rem;
   }
@@ -93,6 +95,7 @@ body {
     border: 1px solid var(--primaryColor);
     transition: var(--mainTransition);
     cursor: pointer;
+     
   }
 .boutonAchatDeLaBanniere:hover {
   background: transparent;
@@ -147,7 +150,7 @@ body {
     
     font-size: 1rem;
     color: var(--mainBlack);
-    border: 1px solid green;
+    border: 1px solid rgb(238, 28, 80);
     
     cursor: pointer;
   }
@@ -157,11 +160,51 @@ body {
   .fas,  .fa-question-circle {
     margin-right: 0.5rem;
   }
+  .fa-shopping-cart{
+    color: rgb(224, 64, 117);
+  }
+  .fa-shopping-cart:hover {
+    
+    color: rgb(77, 224, 64);
+  }
   .imgContainer:hover .boutonDetails {
     transform: translateX(0);
     
     
     background: transparent;
+  }
+  .boutonAchatPageDescription{
+    position: absolute;
+    
+    top: 50%;
+    right: 0;
+    
+    
+    text-transform: uppercase;
+    padding: 0.5rem 0.75rem;
+    letter-spacing: var(--mainSpacing);
+    font-weight: bold;
+    transition: var(--mainTransition);
+    transform: translateX(201%);
+    
+    
+    
+    
+    font-size: 3rem;
+    color: var(--mainBlack);
+    border: 1px solid rgb(12, 236, 31);
+    
+    cursor: pointer;
+  }
+  
+  .boutonAchatPageDescription:hover {
+    color: rgb(58, 245, 11);
+  }
+  .imgContainer:hover .boutonAchatPageDescription {
+    transform: translateX(0);
+    
+    
+    background:transparent;
   }
   .imgProduit {
     display: block;
@@ -192,3 +235,24 @@ body {
   }
   
   /* ---------------End of Products --------------*/
+
+  /*---------------addFavorite--------*/
+  .article .addFavorite{
+    font-size: 1.4rem;
+    position: absolute;
+    top: 80px;
+    right: 10px;
+}
+
+.article .addFavorite .far{
+    color: rgba(0,0,0,0.2);
+}
+
+.article .addFavorite:hover{
+    color: yellow;
+    cursor: pointer;
+}
+
+.article .addFavorite.activated{
+    color: yellow;
+}

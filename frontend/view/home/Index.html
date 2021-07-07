@@ -13,10 +13,10 @@
 
 
     <!--styles css-->
-    <link rel="stylesheet" href="../../frontend/css/style.css" />
+    <link rel="stylesheet" href="../../css/style.css" />
 
     <!--favicon-->
-    <link rel="shortcut icon" type="image/png" href="../../backend/images/faviconOurs.png" />
+    <link rel="shortcut icon" type="image/png" href="../../../backend/images/faviconOurs.png" />
 
     <!--réduire le temps de connexion-->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -37,18 +37,14 @@
     <!-- barre de navigation-->
    <nav class="barreDeNavigation">
        <div class="justifyBarreDeNavigation">
-            <span class="iconeDeNavigation">
-                <i class="fas fa-bars"></i>
-            </span>
-            <img src="../../backend/images/logo250X115Petit.jpg" alt="logo Orinoco">
-            <div class="boutonPanier" >
-            <span class="iconeDeNavigation">
-                <i class="fas fa-cart-plus"></i>
-            </span>
-            <div class="NombreItemsDuBoutonPanier">0</div>
-            </div>
-       </div>
-       
+            <img src="../../../backend/images/logo250X115Petit.jpg" alt="logo Orinoco">
+              <div class="boutonPanier" >
+                <span class="iconeDeNavigation">
+                    <a  class="linkFavoris" href="../favorisProduits/favoris.html" title="Vos Favoris">
+                        <i class="fas fa-star"></i>      
+                    </a>
+                </span>    
+       </div>   
    </nav>
 <!--Fin de la navbarre-->
 
@@ -56,9 +52,9 @@
 <header class="header">
     <div class="banniere">
         <h1 class="titreDeLaBanniere">Notre fantastique collection d'ours en peluche</h1>
-        <a href="../../frontend/html/description.html">
+        <a href="#anchre">
             <button class="boutonAchatDeLaBanniere">
-                faites-vous plaisir
+                faites-vous plaisir avec nos ours vintages cousus main!
             </button></a>
     </div>
 </header>
@@ -67,7 +63,7 @@
 <!--produits Oursons-->
 <section class="produits">
     <div class="titreDeLaSection">
-        <h2>Nos Oursons</h2>
+        <h2 id="anchre">Nos Oursons</h2>
     </div>
     <div class="justifyProduits">
          
@@ -111,9 +107,17 @@
    <!--font awesome-->
    <script src="https://kit.fontawesome.com/19a015738e.js" crossorigin="anonymous"></script>
     <!--js-->
-    <script src="../../frontend/js/index.js"></script>
-    <script src="../../frontend/js/description.js"></script>
+
+   
+
+    <script src="../../js/teddy.js"></script>
+    <script src="../../js/teddyManager.js"></script>
+    <script src="../../js/favorisProduitsManager.js"></script>
+    <script src="../../js/config.js"></script>
+    <script src="../home/index.js"></script>
     
-  
+
+
+
 </body>
 </html>

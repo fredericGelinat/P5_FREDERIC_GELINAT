@@ -13,10 +13,10 @@
 
 
     <!--styles css-->
-    <link rel="stylesheet" href="../../frontend/css/style.css" />
+    <link rel="stylesheet" href="../../../frontend/css/style.css" />
 
     <!--favicon-->
-    <link rel="shortcut icon" type="image/png" href="../../backend/images/faviconOurs.png" />
+    <link rel="shortcut icon" type="image/png" href="../../../backend/images/faviconOurs.png" />
 
     <!--réduire le temps de connexion-->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -40,13 +40,15 @@
             <span class="iconeDeNavigation">
                 <i class="fas fa-bars"></i>
             </span>
-            <img src="../../backend/images/logo250X115Petit.jpg" alt="logo Orinoco">
+            <img src="../../../backend/images/logo250X115Petit.jpg" alt="logo Orinoco">
             <div class="boutonPanier">
             <span class="iconeDeNavigation">
-                <i class="fas fa-cart-plus"></i>
+               
+                       <a  class="linkFavoris" href="../favorisProduits/favoris.html" title="Vos Favoris">
+                       <i class="fas fa-cart-plus"></i>
+                       </a>
             </span>
-            <div class="NombreItemsDuBoutonPanier">0</div>
-            </div>
+            
        </div>
        
    </nav>
@@ -58,31 +60,31 @@
             <i class="fas fa-window-close"></i>
         </span>
         <h2>Votre Panier</h2>
-        <div class="cartContaineur">
-            <!--carte item-->
-            <div class="cartItem">
-                <img src="backend/images/teddy_1.jpg" alt="ours numero un">
-            <div>
-            
-                <h4>Norbert</h4>
-                <h5>29€</h5>
-            <span class="suppressionItem">Supprimer</span>
-            </div>
-            <div>
-                <i class="fas fa-chevron-up"></i>
-                <p class="item-amount">1</p>
-                <i class="fas fa-chevron-down"></i>
-            </div>
-            </div>
+        <div class="cartContaineur"> 
+      
 
-            <!--fin de lacarte item-->
-        </div>
-        <div class="cartFooter">
-            <h3>Votre Total : € <span class="cartTotal">0</span></h3>
-            <button class="clear-cart boutonDeLaBanniere">Vider le panier</button>
-        </div>
-    </div>
+
 </div>
-<!--fin des cart-->
+
+<div class="cartFooter">
+    <h3>Votre Total : € <span class="cartTotal">0</span></h3>
+    <button class="clear-cart boutonDeLaBanniere">Vider le panier</button>
+</div>
+</div>
+     <!--fin des cart-->
+            
+
+<!--script-->
+
+
+<script src="../../js/teddy.js"></script>
+<script src="../../js/teddyManager.js"></script>
+<script src="../../js/favorisProduitsManager.js"></script>
+<script src="../../js/config.js"></script>
+<script src="../favorisProduits/favoris.js"></script>
+
+   <!--font awesome-->
+   <script src="https://kit.fontawesome.com/19a015738e.js" crossorigin="anonymous"></script>
+     </div>
 </body>
 </html>
